@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(/^(test|spec|features)\//)
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'ally'
+  spec.add_dependency 'ally', '~> 0.0', '>= 0.0.17'
   spec.add_dependency 'wolfram'
 
   # development dependencies
