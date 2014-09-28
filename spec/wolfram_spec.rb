@@ -10,7 +10,7 @@ describe Ally::Render::Wolfram do
 
   it 'get cool' do
     ans = io.pass('cool', subject)
-    ans.should match(/^[0-9]+ °F  \(wind chill: [0-9]+ °F\)/i)
+    ans.should match(/^[0-9]+ °F/i)
   end
 
 end
