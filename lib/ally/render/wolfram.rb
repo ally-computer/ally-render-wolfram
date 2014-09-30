@@ -12,9 +12,8 @@ module Ally
         super # do not delete
         @keywords = %w( wolfram )
         @wolfram = ::Wolfram
-        @wolfram.appid = @settings[:appid] || ENV['ALLY_RENDER_WOLFRAM_APPID']
-        @ignore_words = %w(
-          wolfram        )
+        @wolfram.appid = @plugin_settings[:appid]
+        @ignore_words = %w( wolfram )
       end
 
       def process(inquiry, io)
